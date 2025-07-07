@@ -115,3 +115,12 @@ Using Managed Identity instead of connection strings
 
 Enabling private endpoint access for Blob and Cosmos DB
 
+Infra used in this solution
+---------------------------
+
+Storage account
+cosmos DB
+function app
+
+The above infra has to be created using terraform or arm templates
+
