@@ -29,6 +29,14 @@ This project provides a complete serverless solution to reduce storage costs in 
                              +--------------+--------------+
                              | Optional Read Proxy Function|
                              +-----------------------------+
+
+✅ Proposed Solution: Active + Archived Tier with Intelligent Routing
+------------------------------------------------------------------------
+🧱  Tiered Storage Architecture
+Tier	Storage	Purpose	Cost
+Hot Tier	Azure Cosmos DB	Stores recent (≤3 months) billing records	High
+Cold Tier	Azure Blob Storage (Hot or Cool tier)	Stores older (>3 months) records in JSON format	Very Low
+
 🔧 Project Features
 --------------------------
 🧊 Tiered Storage: Recent data in Cosmos DB, old data in Blob Storage
